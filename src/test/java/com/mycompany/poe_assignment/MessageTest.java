@@ -4,6 +4,7 @@
  */
 package com.mycompany.poe_assignment;
 
+import java.util.Locale;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -73,6 +74,13 @@ public class MessageTest {
         String hash = message1.createMessageHash();
         assertTrue(hash.contains(":1:"));
         assertEquals((message1.getMessageID().substring(0, 2) + ":1:HITONIGHT").toUpperCase(), hash);
+    }
+    
+    @Test
+    public void testGenerateMessageID(){
+        assertNotNull(message1.getMessageID());
+        assertTrue(message1.getMessageID().length() <= 10);
+        System.out.printf("Message ID generated: "+ message1.getMessageID());
     }
 
     /**
