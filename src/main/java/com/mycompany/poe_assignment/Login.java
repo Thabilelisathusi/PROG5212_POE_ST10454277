@@ -64,17 +64,27 @@ public class Login {
     }
 
     // 4. Register User
-    public String registerUser(String username, String password, String cellPhone) {
+    public String registerUser(String username, String password, String cellPhone, String firstname,String lastName) {
         if (!checkUserName(username)) {
             return "Username is not correctly formatted, please ensure that your username contains an underscore and is no more than five characters in length.";
         }
-        if (!checkPasswordComplexity(password)) {
+        else if (!checkPasswordComplexity(password)) {
             return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
         }
-        if (!checkCellPhoneNumber(cellPhone)) {
+        else if (!checkCellPhoneNumber(cellPhone)) {
             return "Cell phone number incorrectly formatted or does not contain international code.";
         }
+        
+        // Store the user details using setter methods
+        this.username = username;
+        this.password = password;
+        this.cellPhone = cellPhone;
+        this.firstName = firstname;
+        this.lastName = lastName;
         return "User registered successfully.";
+        
+      
+        
     }
 
     // 5. Login User
@@ -90,4 +100,11 @@ public class Login {
             return "Username or password incorrect, please try again.";
         }
     }
+    
+     // Getters
+    public String getUsername() { return username; }
+    public String getPassword() { return password; }
+    public String getCellNumber() { return cellPhone; }
+    public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
 }
