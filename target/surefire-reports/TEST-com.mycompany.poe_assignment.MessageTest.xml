@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.poe_assignment.MessageTest" time="0.123" tests="1" errors="1" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.poe_assignment.MessageTest" time="0.113" tests="1" errors="0" skipped="0" failures="0">
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +19,15 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin"/>
+<<<<<<< HEAD
     <property name="sun.java.command" value="C:\Users\simth\AppData\Local\Temp\surefire12810682093403631656\surefirebooter-20251120232901104_3.jar C:\Users\simth\AppData\Local\Temp\surefire12810682093403631656 2025-11-20T23-29-00_924-jvmRun1 surefire-20251120232901104_1tmp surefire_0-20251120232901104_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.poe_assignment.MessageTest#testDisplayFullReport"/>
+=======
+    <property name="sun.java.command" value="C:\Users\simth\AppData\Local\Temp\surefire16878562672369779933\surefirebooter-20251012143207381_3.jar C:\Users\simth\AppData\Local\Temp\surefire16878562672369779933 2025-10-12T14-32-07_204-jvmRun1 surefire-20251012143207381_1tmp surefire_0-20251012143207381_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.mycompany.poe_assignment.MessageTest#testDisregardMessage"/>
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
     <property name="surefire.test.class.path" value="C:\Users\simth\OneDrive\Documents\NetBeansProjects\POE_Assignment\target\test-classes;C:\Users\simth\OneDrive\Documents\NetBeansProjects\POE_Assignment\target\classes;C:\Users\simth\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\simth\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\simth\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\simth\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\simth\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\simth\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\simth\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\simth\.m2\repository\one\xingyi\json\1.1\json-1.1.jar;C:\Users\simth\.m2\repository\org\json\json\20180813\json-20180813.jar;C:\Users\simth\.m2\repository\one\xingyi\rest\1.1\rest-1.1.jar;C:\Users\simth\.m2\repository\one\xingyi\rest\1.1\rest-1.1-tests.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\simth"/>
@@ -31,7 +41,11 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+<<<<<<< HEAD
     <property name="surefire.real.class.path" value="C:\Users\simth\AppData\Local\Temp\surefire12810682093403631656\surefirebooter-20251120232901104_3.jar"/>
+=======
+    <property name="surefire.real.class.path" value="C:\Users\simth\AppData\Local\Temp\surefire16878562672369779933\surefirebooter-20251012143207381_3.jar"/>
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12"/>
@@ -61,6 +75,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="testDisplayFullReport" classname="com.mycompany.poe_assignment.MessageTest" time="0.061">
     <error message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException"><![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
@@ -75,4 +90,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ]]></error>
   </testcase>
+=======
+  <testcase name="testDisregardMessage" classname="com.mycompany.poe_assignment.MessageTest" time="0.071"/>
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
 </testsuite>

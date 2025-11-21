@@ -4,12 +4,18 @@
  */
 package com.mycompany.poe_assignment;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
+=======
+import java.util.Locale;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
 import org.junit.jupiter.api.BeforeEach;
 
 
@@ -24,10 +30,17 @@ public class MessageTest {
         Message.clearAllMessages();
 
         // Message 1 (valid)
+<<<<<<< HEAD
         message1 = new Message("+27718693002", "Hi Mike, can you join us for dinner tonight");
         
         // Message 2 (invalid recipient format)
         message2 = new Message( "08575975889", "Hi Keegan, did you receive the payment?");
+=======
+        message1 = new Message(1, "+27718693002", "Hi Mike, can you join us for dinner tonight");
+        
+        // Message 2 (invalid recipient format)
+        message2 = new Message(2, "08575975889", "Hi Keegan, did you receive the payment?");
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
     }
     /**
      * Test of checkMessageID method, of class Message.
@@ -35,7 +48,11 @@ public class MessageTest {
     @Test
     public void testCheckMessageID_Successful() {
         System.out.println("checkMessageID");
+<<<<<<< HEAD
         Message instance = new Message("+27718693002","Hi Mike, can you join us for dinner tonight " );
+=======
+        Message instance = new Message(1,"+27718693002","Hi Mike, can you join us for dinner tonight " );
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
         boolean expResult = true;
         boolean result = instance.checkMessageID();
         assertEquals(expResult, result);
@@ -44,7 +61,11 @@ public class MessageTest {
     @Test
     public void testCheckMessageID_Unsuccessful() {
         System.out.println("checkMessageID");
+<<<<<<< HEAD
         Message instance = new Message("08575975889 ","Hi Keegan, did you receive the payment?" );
+=======
+        Message instance = new Message(2,"08575975889 ","Hi Keegan, did you receive the payment?" );
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
         boolean expResult = false;
         boolean result = instance.checkMessageID();
         assertEquals(expResult, result);
@@ -78,6 +99,16 @@ public class MessageTest {
         assertTrue(hash.contains(":1:"));
         assertEquals((message1.getMessageID().substring(0, 2) + ":1:HITONIGHT").toUpperCase(), hash);
     }
+<<<<<<< HEAD
+=======
+    
+    @Test
+    public void testGenerateMessageID(){
+        assertNotNull(message1.getMessageID());
+        assertTrue(message1.getMessageID().length() <= 10);
+        System.out.printf("Message ID generated: "+ message1.getMessageID());
+    }
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
 
     /**
      * Test of checkMessageLength method, of class Message.
@@ -93,7 +124,11 @@ public class MessageTest {
     @Test
     public void testCheckMessageLength_Failure() {
         String longText = "A".repeat(260);
+<<<<<<< HEAD
         Message longMessage = new Message( "+27821234567", longText);
+=======
+        Message longMessage = new Message(3, "+27821234567", longText);
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
         assertFalse(longMessage.checkMessageLength());
 
         int excess = longText.length() - 250;
@@ -103,6 +138,7 @@ public class MessageTest {
                 : "Message exceeds 250 characters by " + excess + ", please reduce size.";
         assertEquals(expected, actual);
     }
+<<<<<<< HEAD
     
     @Test
     public void testGenerateMessageID(){
@@ -110,6 +146,8 @@ public class MessageTest {
         assertTrue(message1.getMessageID().length() <= 10);
         System.out.println("Message ID generated: " + message1.getMessageID());
     }
+=======
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
    
     /**
      * Test of sentMessage method, of class Message.
@@ -153,6 +191,7 @@ public class MessageTest {
         assertEquals(expected, result);
     }
 
+<<<<<<< HEAD
     /*===========Part 3 Tests===========================*/
     // Test data population method for Part 3
     private void populateTestData() {
@@ -266,4 +305,6 @@ public class MessageTest {
         assertTrue(result.contains("Message hash not found"));
     }
 
+=======
+>>>>>>> a301cfd41b22f6075c41ecea587e1a7df791b6b1
 }
