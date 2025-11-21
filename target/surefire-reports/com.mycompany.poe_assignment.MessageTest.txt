@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.poe_assignment.MessageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.123 s <<< FAILURE! -- in com.mycompany.poe_assignment.MessageTest
+com.mycompany.poe_assignment.MessageTest.testDisplayFullReport -- Time elapsed: 0.061 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at com.mycompany.poe_assignment.Message.displayFullReport(Message.java:273)
+	at com.mycompany.poe_assignment.MessageTest.testDisplayFullReport(MessageTest.java:271)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
